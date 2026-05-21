@@ -1,0 +1,38 @@
+{
+  "name": "frenzy",
+  "version": "0.0.0-development",
+  "description": "A universal, secure, and blazing fast package manager.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "frenzy": "dist/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Torkovwryy/Frenzy.git"
+  },
+  "keywords": [
+    "package-manager",
+    "frenzy",
+    "dependency-management",
+    "node",
+    "typescript",
+    "security"
+  ],
+  "author": "Torkovwryy <krebinkkj3@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Torkovwryy/Frenzy/issues"
+  },
+  "homepage": "https://github.com/Torkovwryy/Frenzy#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },,
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "yarn@4.1.1"
+}
