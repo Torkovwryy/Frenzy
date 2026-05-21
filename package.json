@@ -1,6 +1,7 @@
 {
   "name": "frenzy",
   "version": "0.0.0-development",
+  "type": "module",
   "description": "A universal, secure, and blazing fast package manager.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +9,11 @@
     "frenzy": "dist/cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"Tests will be configured next\""
   },
   "repository": {
     "type": "git",
@@ -30,9 +35,21 @@
   "homepage": "https://github.com/Torkovwryy/Frenzy#readme",
   "engines": {
     "node": ">=20.0.0"
-  },,
+  },
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.1.1",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
+    "@typescript-eslint/parser": "^8.59.4",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3"
+  }
 }
